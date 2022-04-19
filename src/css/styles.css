@@ -228,7 +228,7 @@ footer {
         max-width: 200px;
         width: 100%;
     }
-
+}
     /*Resolución de medias (equipos de escritorio)*/
 @media screen and (min-width: 1024px) {
 
@@ -300,7 +300,7 @@ footer {
         flex-direction: row;
         list-style: none;
     }
-    
+}
     /*Resolución macro*/
 
     @media screen and (min-width: 1200px) {
@@ -321,3 +321,4 @@ footer {
         max-width: 90px;
         width: 100%;
     }
+}
