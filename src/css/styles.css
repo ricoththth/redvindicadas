@@ -229,6 +229,8 @@ footer {
         width: 100%;
     }
 
+}
+
     /*Resolución de medias (equipos de escritorio)*/
 @media screen and (min-width: 1024px) {
 
@@ -303,7 +305,7 @@ footer {
     
     /*Resolución macro*/
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width:1200px) {
 
     main{
         color: #FFF8F8;
@@ -322,3 +324,5 @@ footer {
         width: 100%;
     }
 
+    }
+}
