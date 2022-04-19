@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+:root{
+    --morado-osc: #440042;
+    --morado-oscuro:#3B0057;
+    --rosa-oscuro: #A12161;
+    --rosa-claro:#C75C7E;
+    --rosa-gris:#CC99A9;
+    --rosa:#F2ACB9;
+    --fondo:#FFF8F8;
+    --amarillo:#FFCA00;
+    --naranja:#FF671B;
+    /*gradiente card background: linear-gradient(180deg, #FF7A00 0%, #F67209 0.01%, #A12161 81.35%);*/
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: var(--fondo);
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*Banner*/
+.ds-banner img{
+    max-width:1500px;
+    width:100%;
+    margin-bottom: 0px;
+}
+/*css aprende y juega nav bar*/
+.ds-h1{
+    position: relative;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--rosa-oscuro);
+    font-size: 25px;
+    padding: 3px 5px;
+    line-height: 37px;
+    }
+.ds-container-title{
+    margin: 20px auto -20px;
+    max-width: 220px;
+}
+.ds-h2{
+    font-size: 25px;
+    color: #000000;
+    padding-bottom: 10px;
+}
+.ds-contenedor-fondo{
+    margin-bottom: 25px;
+    padding:40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fondo-adultos{
+    background-image: url(../utils/images/juega-y-aprende/adul-background.svg);
+}
+.fondo-jovenes{
+    background-image: url(../utils/images/juega-y-aprende/jov-background.svg);
+}
+.ds-card-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ds-card{
+    margin:5px;
+    background-color:var(--fondo);
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding:10px;
+}
+.ds-card-border{
+    margin:8px;
+    background: -webkit-linear-gradient(#FF7A00 0%, #F67209 0.01%, #A12161 81.35%);
+    border-radius: 10px;
+}
+.ds-card img{
+    padding:5px;
+}
+.ds-img-card{
+    max-width:100px;
+    width:80%;
+}
+.icondescarga{
+    max-width:35px;
+    width:60%;
+}
+@media screen and (min-width:768px) {
+    .ds-h1{
+        font-size: 30px;
+    }
+    .ds-container-title{
+        max-width: 300px;
+    }
+    .ds-h2{
+        font-size: 30px;
+    }
+    .ds-card{
+        padding:25px 35px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .ds-h1{
+        font-size: 35px;
+        padding-bottom:10px ;
+    }
+    .ds-container-title{
+        max-width: 300px;
+    }
+    .ds-card{
+        padding:25px 60px;
+    }
+    .ds-img-card{
+        width:100%;
+    }
+    .icondescarga{
+        width:70%;
+    }
+}
+@media screen and (min-width:1200px) {
+    .ds-h2{
+        font-size: 35px;
+    }
+    .icondescarga{
+        width:80%;
+    }
+    .ds-card{
+        max-width: 100px;
+    }
+}

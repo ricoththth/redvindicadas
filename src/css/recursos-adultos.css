@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+:root{
+    --morado-osc: #440042;
+    --morado-oscuro:#3B0057;
+    --rosa-oscuro: #A12161;
+    --rosa-claro:#C75C7E;
+    --rosa-gris:#CC99A9;
+    --rosa:#F2ACB9;
+    --fondo:#FFF8F8;
+    --amarillo:#FFCA00;
+    --naranja:#FF671B;
+    /*gradiente card background: linear-gradient(180deg, #FF7A00 0%, #F67209 0.01%, #A12161 81.35%);*/
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: var(--fondo);
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    /*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+}
+/*Barra de recursos de padres y adultos*/
+.ds-container-titlebar{
+    margin: 15px auto;
+    max-width: 260px;
+    width:85%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.ds-h1-barra{
+    background-color: var(--rosa-oscuro);
+    color: white;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.barnav-recursosyjuegos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    /*border: 2px solid;*/
+}
+.ds-barnav-interna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding:0 10px;
+    /*border: 2px solid;*/
+}
+.ds-img-menu{
+    max-height: 100px;
+    height: 60%;
+    padding-bottom: 5px;
+}
+.ds-imglinea-nav{
+    margin: 0 10px;
+    height:70px;
+}
+.button-adult, .desactive:hover{
+    background: var(--rosa-oscuro);
+    border: 2px solid var(--rosa-oscuro);
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;    
+    text-decoration: none;
+    padding: 2px 5px;
+}
+
+.button-adult:hover, .desactive{
+    color: var(--rosa-oscuro);
+    border: 2px solid var(--rosa-oscuro);
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;    
+    text-decoration: none;
+    padding: 2px 5px;
+}
+/*recursos*/
+.ds-title-src{
+    padding:5px;
+    margin:10px 0;
+    background-color: var(--morado-osc);
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+}
+.ds-primer-recurso p, .ds-card-src  p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 20px ;
+}
+.ds-primer-recurso p{
+    text-align: left;
+}
+/*cards*/
+.container-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ds-card-border-src{
+    width: 200px;
+    padding:0.1px;
+    background: -webkit-linear-gradient(#FF7A00 0%, #F67209 0.01%, #A12161 81.35%);
+    border-radius: 10px;
+    margin: 10px;
+}
+.ds-card-src{
+    height: 160px;
+    margin:5px;
+    background-color:var(--fondo);
+    border-radius: 10px;
+    padding:15px;
+    text-align: center;
+}
+.ds-card-src h3{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+.icondescarga-derecha{
+    max-width:30px;
+    width:50%;
+}
+.ds-line{
+    height: 15px;
+    margin: 10px 0;
+    background-color: var(--morado-osc);
+}
+@media screen and (min-width:768px) {
+    body{
+        background-color: #ffd2e0;
+    }
+    .ds-primer-recurso p {
+        padding: 10px 60px ;
+    }
+    .container-cards{
+    flex-direction: row;
+    }
+}
+@media screen and (min-width:1024px) {
+    body{
+        background-color: #d2f8ff;
+    }
+}
+@media screen and (min-width:1200px) {
+    body{
+        background-color: #e6ffd2;
+    }
+}
