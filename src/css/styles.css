@@ -228,7 +228,7 @@ footer {
         max-width: 200px;
         width: 100%;
     }
-
+}
     /*Resolución de medias (equipos de escritorio)*/
 @media screen and (min-width: 1024px) {
 
@@ -321,4 +321,4 @@ footer {
         max-width: 90px;
         width: 100%;
     }
-
+}}
