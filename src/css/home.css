@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
@@ -202,9 +203,202 @@ footer {
     color: var(--rosa); 
 }
 
-/*Resolución de tablet*/
-@media screen and (min-width: 768px) {
+/* Diseño de home*/
 
+.home-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../utils/images/index/img-pantalla-inicial.svg);
+    height: 40vh;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-title {
+    font-family:"Oswald";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .calendar-container {
+    background: #440042;
+    color: #ffffff;
+    height: 100%;
+    line-height: 2;
+    width: 100%;
+  }
+  .calendar-container h3 {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 104px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+  .calendar-container p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 1rem;
+    text-align: center;
+  }
+
+.container-calendar{
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin: .2rem auto;
+    max-width: 350px;
+    width: 100%;
+}
+
+.calendar-tittle{
+    background-color: #A12161;
+    border-radius: 5px;
+    color: #FFF8F8;
+    margin: 1rem 0;
+    padding: .5rem;
+    text-align: center;
+}
+
+.calendar-header, .calendar-body{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.calendar-body{
+    background-color: var(--fondo);
+    border-radius: 5px;
+    padding: 1rem 0;
+}
+
+.day{
+    list-style: none;
+    padding: .5rem auto;
+    text-align: center;
+}
+
+.day-name{
+    background-color: #A12161;
+    color: #FFF8F8;
+    font-weight: 700;
+    margin-top: 1rem;
+    padding: .2rem;
+    text-align: center;
+}
+
+.first-day{
+    grid-column-start: 6;
+}
+
+.last-day{
+    display: none;
+}
+
+.day-button{
+    background-color: #8B63C3;
+    border-radius: 3px;
+    border: none;
+    padding: .2rem;
+    width: 25px;
+}
+
+.calendar-and-image img{
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+}
+  .vector {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    text-align: center;
+    line-height: 5;
+  }
+
+  .info-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .vector h2 {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .home-cards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+  }
+
+  .card-border {
+    border-style: solid;
+    border-width: 10px;
+    border-image: linear-gradient(
+        180deg,
+        #ff7a00 0%,
+        #f67209 0.01%,
+        #a12161 81.35%
+      )
+      1;
+  }
+  
+  .home-cards h5 {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    line-height: 3;
+  }
+  .go-home {
+    padding: .5rem;
+    text-align: center;  
+}
+    
+.go-home a{
+    max-width: 1000px;
+}
+
+.go-home i{
+    color: #f67209;
+    margin-top: .5rem;
+}
+
+  .logo-home-cards {
+    width: 150px;
+    height: 150px;
+  }
+
+  .pink-title {
+    color: #f2acb9;
+  }
+  .white-title {
+    color: white;
+  }
+
+  /*Resolución de tablet*/
+@media screen and (min-width: 768px) {
     /* Diseño de header */
     .header-logo h1 {
         font-size: 35px; 
@@ -229,9 +423,9 @@ footer {
         width: 100%;
     }
 }
-    /*Resolución de medias (equipos de escritorio)*/
-@media screen and (min-width: 1024px) {
 
+/*Resolución de medias (equipos de escritorio)*/
+@media screen and (min-width: 1024px) {
     body, header, nav, footer {
         margin: 0;
         width: 100%;
@@ -300,12 +494,11 @@ footer {
         flex-direction: row;
         list-style: none;
     }
-    
 }
-    /*Resolución macro*/
 
-    @media screen and (min-width: 1200px) {
-
+/*Resolución macro*/
+@media screen and (min-width: 1200px) {
+    
     main{
         margin: 0 auto;
     }
