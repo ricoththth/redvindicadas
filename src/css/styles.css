@@ -303,6 +303,7 @@ footer {
         list-style: none;
     }
     
+}
     /*Resolución macro*/
 
     @media screen and (min-width:1200px) {
@@ -325,4 +326,5 @@ footer {
     }
 
     }
+}
 }
