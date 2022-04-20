@@ -23,13 +23,12 @@ body{
     font-style: normal;
     font-weight: 600;
     text-align: center;
-    /*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
 }
 /*Barra de recursos de padres y adultos*/
 .ds-container-titlebar{
     margin: 15px auto;
-    max-width: 260px;
-    width:85%;
+    max-width: 350px;
+    width:80%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
@@ -44,7 +43,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     /*border: 2px solid;*/
 }
 .ds-barnav-interna{
@@ -73,8 +72,8 @@ body{
     border-radius: 5px;    
     text-decoration: none;
     padding: 2px 5px;
+    font-size: 15px;
 }
-
 .button-adult:hover, .desactive{
     color: var(--rosa-oscuro);
     border: 2px solid var(--rosa-oscuro);
@@ -83,17 +82,23 @@ body{
     border-radius: 5px;    
     text-decoration: none;
     padding: 2px 5px;
+    font-size: 15px;
 }
 /*recursos*/
 .ds-title-src{
     padding:5px;
-    margin:10px 0;
-    background-color: var(--morado-osc);
+    margin:10px 0 15px;
     color: white;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 20px;
 }
-.ds-primer-recurso p, .ds-card-src  p{
+.primary{
+    background-color: var(--morado-osc);
+}
+.secondary{
+    background-color: var(--rosa-oscuro);
+}
+p{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -136,10 +141,24 @@ body{
     max-width:30px;
     width:50%;
 }
-.ds-line{
+.ds-line, .ds-line-second{
     height: 15px;
-    margin: 10px 0;
+    margin: 15px 0 20px;
+}
+.ds-line{
     background-color: var(--morado-osc);
+}
+.ds-line-second{
+    background-color: var(--rosa-oscuro);
+}
+.ds-background{
+    background-color: var(--morado-osc);
+}
+/*información complementaria*/
+iframe{
+    width:95%; 
+    height:500px;
+    margin:10px auto;
 }
 @media screen and (min-width:768px) {
     body{
@@ -151,10 +170,26 @@ body{
     .container-cards{
     flex-direction: row;
     }
+    .ds-title-src{
+        font-size: 30px;
+    }
+    .ds-h1-barra{
+        background-color: var(--rosa-oscuro);
+        color: white;
+        border-radius: 5px;
+        padding-bottom: 5px;
+        font-size: 25px;
+    }
+    .button-adult, .desactive:hover, .button-adult:hover, .desactive{
+        font-size: 20px;
+    }
 }
 @media screen and (min-width:1024px) {
     body{
         background-color: #d2f8ff;
+    }
+    .button-adult{
+        height: 80%;
     }
 }
 @media screen and (min-width:1200px) {
