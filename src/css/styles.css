@@ -173,7 +173,7 @@ footer {
 }
 
 .foot-email img {
-    max-width: 100px;
+    max-width: 80px;
     width: 100%;
 }
 
@@ -230,7 +230,6 @@ footer {
     }
 
 }
-
     /*Resolución de medias (equipos de escritorio)*/
 @media screen and (min-width: 1024px) {
 
@@ -293,7 +292,7 @@ footer {
     }
 
     .foot-email img {
-        max-width: 80px;
+        max-width: 100px;
         width: 100%;
     }
 
@@ -325,6 +324,7 @@ footer {
         width: 100%;
     }
 
-    }
 }
-}
+
+
+
