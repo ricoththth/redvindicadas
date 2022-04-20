@@ -302,6 +302,7 @@ footer {
         list-style: none;
     }
     
+}
     /*Resolución macro*/
 @media screen and (min-width: 1200px) {
 
@@ -321,4 +322,5 @@ footer {
         max-width: 90px;
         width: 100%;
     }
+}
 }
