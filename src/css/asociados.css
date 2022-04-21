@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFF8F8;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --morado-osc: #440042;
+    --morado-oscuro: #3B0057;
+    --rosa-oscuro: #A12161;
+    --rosa-claro: #C75C7E;
+    --rosa-gris: #CC99A9;
+    --rosa: #F2ACB9;
+    --fondo: #FFF8F8;
+    --amarillo: #FFCA00;
+    --naranja: #FF671B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.d-titulolineas h1 {
+    background-image: url(../img/vectortitulo-lineasemer.svg);
+    color: #FFFF;
+    text-align: center;
+    padding: 2rem;
+    max-width: 2600px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.asociados-titulos {
+    text-align: center;
+    color: #3B0057;
+    text-shadow: 2px 1px 5px rgb(126, 126, 126);
+}
+
+.visibilidad-asociados {
+    text-align: center;
+    border-bottom: #3B0057 5px solid;
+}
+
+.d-vectores-asociados img {
+    width: 100px;
+}
+
+.vector-2 {
+    float: right;
+}
+
+.d-container {
+    border: #A12161 4px solid;
+    width: 250px;
+    height: 50vh;
+    text-align: center;
+    margin: 50px 20px;
+    padding: 15px;
+    background-color: #c75c7e33;
+    box-shadow: 10px 15px #A12161;
+    margin: 25% 8%;
+}
+
+.d-container h1 {
+    font-size: 20px;
+}
+
+.d-container img,
+a,
+p {
+    padding: 15px;
+    font-weight: 600;
+}
+
+.d-container img {
+    width: 200px;
+}
+
+
+.d-vectores-asociados-2 {
+    display: flex;
+}
+
+.vector-dos {
+    float: right;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    .d-container {
+        margin: 10% 34%;
+        text-align: center;
+    }
+
+    .d-vectores-asociados img {
+        width: 200px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .asociados {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .d-container {
+        margin: 8% 5%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .d-container {
+        margin: 5% 7%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1900px) {
+
+    .d-container {
+        margin: 5% 10%;
+        text-align: center;
+    }
+
+}
