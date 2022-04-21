@@ -204,7 +204,7 @@ footer {
     color: var(--rosa); 
 }
 
-/* Diseño de jovenes1 */
+/* Diseño de jovenes2 */
 
 .main-section {
     display: flex;
@@ -291,7 +291,9 @@ footer {
     width: 100%;
 }
 
-.content-body-changes h1 {
+/* Submenú fin */
+
+.section-education h1{
     background-color: var(--morado-osc);
     color: var(--fondo);
     margin: 1rem 0;
@@ -300,7 +302,29 @@ footer {
     text-shadow: 1px 2px 4px black;
 }
 
-.content-body-changes h2 {
+.content-education p{
+    font-weight: 400;
+    text-align: center;
+    margin: 2rem;
+}
+
+.section-complement {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-complement h1 {
+    background-color: var(--morado-osc);
+    color: var(--fondo);
+    margin: 1rem 0;
+    padding: 1rem .5rem;
+    text-align: center;
+    text-shadow: 1px 2px 4px black;
+    width: 100%;
+}
+
+.section-complement h2 {
     color: var(--morado-osc);
     font-weight: 700;
     font-size: 20px;
@@ -308,13 +332,25 @@ footer {
     text-align: center;
 }
 
-.content-body-changes p {
-    font-weight: 400;
-    margin: 2rem;
+.section-complement img{
+    max-width: 300px;
+}
+
+.section-complement p {
+    text-align: center;
+    margin: 1rem;
+}
+
+.section-complement a {
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.box-education p{
     text-align: center;
 }
 
-.gradient-box {
+.gradient-box{
     background-color: var(--fondo);
     border: 15px solid transparent;
     border-image: -webkit-linear-gradient(bottom,#F77737,#A12161) 1 10;
@@ -327,37 +363,15 @@ footer {
     min-width: 200px;
 }
 
-.gradient-box h3 {
+.gradient-box h3{
     margin: 1rem;
     text-align: center;
 }
 
-.gradient-box p {
+.gradient-box p{
     font-weight: 400;
     margin: 1rem;
     text-align: center;
-}
-
-.gradient-body-changes{
-    margin: 1rem 0;
-    width: 100%;
-}
-
-.video-responsive {
-    overflow: hidden;
-    padding-bottom: 300px; /* Adecua este valor para controlar la altura del video */
-    position: relative;
-    height: 0;
-    width: 100%;
-}
-
-.video-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position:absolute; 
-    z-index: 1;
 }
 
 .go {
@@ -373,38 +387,9 @@ footer {
     color: #A12161;
 }
 
-.body-changes-foot{
-    background-color: var(--morado-osc);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 20px;
-}
-
-.section-menstruation {
-    background-color: var(--morado-osc);
-    margin-top: 2rem;
-}
-
-.section-menstruation h2 {
-    background-color: var(--rosa-oscuro);
-    color: var(--fondo);
-    margin: 1rem 0;
-    padding: 1rem .5rem;
-    text-align: center;
-    text-shadow: 1px 2px 4px black;
-}
-
-.naranja {
-    color: #F77737;
-}
-
-.menstruation-foot {
-    background-color: var(--rosa-oscuro);
-    max-height: 30px;
-    height: 100%;
-}
-
 /*Resolución de tablet*/
 @media screen and (min-width: 768px) {
+
     /* Diseño de header */
     .header-logo h1 {
         font-size: 35px; 
@@ -433,7 +418,7 @@ footer {
         width: 100%;
     }
 
-    /* Diseño de jovenes1 */
+    /* Diseño de jovenes2 */
 
     .main-buttons {
         justify-content: center;
@@ -460,63 +445,40 @@ footer {
         width: 70%;
     }
 
-    .content-body-changes h2{
-        font-size: 25px;
-    } 
+    /* Fin de submenú */
+
+    .boxes-education{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box-education{
+        max-width: 300px;
+    }
+
+    .section-complement img{
+        max-width: 500px;
+    }
 
     .gradient-box h3 {
         font-size: 20px;
     }
-    
+
     .gradient-box p {
         font-size: 15px;
-    }
-
-    .general-videos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .boxes-videos, .boxes-body {
-        display: flex;
-        flex-direction: row;
-        max-width: 1000px;
-        justify-content: space-between;
-        width: 100%;
     }
 
     .gradient-box {
         margin: .5rem 1rem;
     }
 
-    .gradient-body-changes{
-        min-width: 350px;
-    }
-
-    .gradient-menstruation {
-        margin-bottom: 2rem;
-        min-width: 350px;
-        max-width: 360px;
-    }
-
-    .video-responsive {
-        padding-bottom: 300px; /* Adecua este valor para controlar la altura del video */
-    }
-
-    .body-changes-foot{
-        height: 40px;
-    }
-
-    .content-menstruation {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 /*Resolución de medias (equipos de escritorio)*/
 @media screen and (min-width: 1024px) {
-  
+
     body, header, nav, footer {
         margin: 0;
         width: 100%;
@@ -586,8 +548,8 @@ footer {
             list-style: none;
         }
 
-    /* Diseño de jovenes1 */
-
+    /* Diseño de jovenes2 */
+    
     .main-section {
         align-items: center;
     }
@@ -617,72 +579,66 @@ footer {
         max-width: 300px;
     }
 
-    .content-body-changes h1 {
+    /* Fin de submenú */
+
+    .section-education h1{
         font-size: 35px;
     }
 
-    .content-body-changes h2{
-        font-size: 30px;
-    } 
+    .boxes-content-education{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 1rem;
+    }
+
+    .boxes-content-aditional{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 1rem;
+    }
+
+    .box-initial-desing{
+        height: 440px;
+        width: 535px;
+        border-image: -webkit-linear-gradient(bottom,#A12161, #F77737) 1 10;
+    }
+
+    .box-second-desing{
+        height: 420px;
+        width: 505px;
+    }
+
+    .section-complement img{
+        max-width: 700px;
+    }
+
+    .content-education p{
+        font-size: 20px;
+    }
 
     .gradient-box h3 {
-        font-size: 35px;
-    }
-    
-    .gradient-box p {
         font-size: 30px;
     }
 
-    .content-body-changes p {
-        margin: 4rem;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .general-videos {
-        align-items: center;
-    }
-
-    .video-responsive {
-        padding-bottom: 400px; /* Adecua este valor para controlar la altura del video */
+    .gradient-box p {
+        font-size: 25px;
     }
 
     .gradient-box {
         min-width: 400px;
     }
-
-    .general-videos {
-        margin: 1rem 4rem;
-    }
-
-    .content-menstruation {
-        flex-flow: wrap row;
-        justify-content: center;
-    }
-
-    .section-menstruation h2{
-        font-size: 30;
-    }
-
-    .gradient-menstruation {
-        display: flex;
-        margin: 3rem .5rem;
-        min-height: 340px;
-    }
 }
 
 /*Resolución macro*/
 @media screen and (min-width: 1200px) {
-
     main{
         margin: 0 auto;
     }
-
 
     /* Diseño de footer */
     .foot-email img {
         max-width: 90px;
         width: 100%;
     }  
-
 }
