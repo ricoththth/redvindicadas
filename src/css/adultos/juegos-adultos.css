@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+:root{
+    --morado-osc: #440042;
+    --morado-oscuro:#3B0057;
+    --rosa-oscuro: #A12161;
+    --rosa-claro:#C75C7E;
+    --rosa-gris:#CC99A9;
+    --rosa:#F2ACB9;
+    --fondo:#FFF8F8;
+    --amarillo:#FFCA00;
+    --naranja:#FF671B;
+    /*gradiente card background: linear-gradient(180deg, #FF7A00 0%, #F67209 0.01%, #A12161 81.35%);*/
+}
+*{
+    margin: 0;
+}
+p{
+    text-align: left;
+    margin: 0;
+}
+span{
+    font-weight: 700;
+}
+.ds-container-game{
+    margin:25px auto;
+}
+.ds-game h2{
+    margin: 15px;
+}
+.ds-game img{
+    max-width: 250px;
+    width: 80%;
+}
+.ds-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ds-game-2{
+    flex-direction:column-reverse;
+}
+.ds-container-game-2{
+    background-color: var(--morado-osc);
+    padding: 10px 0;
+    color: white;
+}
+.ds-button{
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.article{
+    background-color: var(--rosa-oscuro);
+}
+.article:hover{
+    background-color: var(--rosa-claro);
+}
+.game{
+    background-color: var(--rosa-claro);
+}
+.game:hover{
+    background-color: var(--rosa-oscuro);
+}
+.ds-button-games{
+    margin: 5px;
+    display: flex;
+    justify-content:center;
+}
+
+@media screen and (min-width:768px) {
+    body{
+        background-color: #ecd2ff;
+    }
+    .ds-game{
+        flex-direction: row;
+        flex-basis: 50%;
+    }
+    .ds-game{
+        flex-direction: row;
+        padding:0 50px;
+    }
+    .ds-game img{
+        max-width: 900px;
+        width: 95%;
+    }
+    a{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:1024px) {
+    body{
+        background-color: #d2f8ff;
+    }
+    .ds-game{
+        padding:0 50px;
+    }
+    .ds-game img{
+        width: 100%;
+    }
+    .ds-group-text{
+        padding:0 50px;
+    }
+    .ds-game h2{
+        font-size: 35px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+@media screen and (min-width:1200px) {
+    body{
+        background-color: #e6ffd2;
+    }
+    .ds-game{
+        padding:0 120px;
+    }
+}
