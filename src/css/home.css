@@ -422,6 +422,34 @@ footer {
         max-width: 200px;
         width: 100%;
     }
+
+    /* Diseño de home*/
+
+    .home-title {
+        font-size: 3rem;
+      }
+    
+    .calendar-container h3 {
+      font-size: 40px;
+    }
+
+    .calendar-and-image{
+        display: flex;
+        padding: 1rem;
+    }
+
+    .vector h2 {
+        font-size: 40px;
+      }
+
+    .cards-container {
+    flex-direction: row;
+    }
+
+    .home-cards {
+        margin-bottom: 3rem;
+        padding: .5rem 1rem;
+      }
 }
 
 /*Resolución de medias (equipos de escritorio)*/
@@ -494,6 +522,37 @@ footer {
         flex-direction: row;
         list-style: none;
     }
+
+    /* Diseño de home*/
+
+    .home-title {
+        font-size: 4rem;
+      }
+
+    .calendar-container h3 {
+    font-size: 50px;
+    }
+
+    .calendar-container p{
+        font-size: 20px;
+    }
+
+    .container-calendar{
+        background-color: transparent;
+        border: 1px solid transparent;
+        margin: .2rem 4rem;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .calendar-and-image{
+        justify-content: space-around;
+    }
+
+    .home-cards {
+        margin-bottom: 3rem;
+        padding: .5rem 2.5rem;
+      }
 }
 
 /*Resolución macro*/
