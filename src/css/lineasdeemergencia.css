@@ -29,7 +29,7 @@ body {
 }
 
 .d-titulolineas h1 {
-    background-image: url(../img/vectortitulo-lineasemer.svg);
+    background-image: url(../utils/images/vectortitulo-lineasemer.svg);
     color: #FFFF;
     text-align: center;
     padding: 2rem;
