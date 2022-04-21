@@ -62,10 +62,10 @@ body{
     background-position: center;
 }
 .fondo-adultos{
-    background-image: url(../utils/images/juega-y-aprende/adul-background.svg);
+    background-image: url(/src/utils/images/juega-y-aprende/adul-background.svg);
 }
 .fondo-jovenes{
-    background-image: url(../utils/images/juega-y-aprende/jov-background.svg);
+    background-image: url(/src/utils/images/juega-y-aprende/jov-background.svg);
 }
 .ds-card-container{
     display: flex;
@@ -86,6 +86,12 @@ body{
     margin:8px;
     background: -webkit-linear-gradient(#FF7A00 0%, #F67209 0.01%, #A12161 81.35%);
     border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+.ds-card-border:hover{
+    margin:8px;
+    background: #FF7A00;
+    border-radius: 10px;
 }
 .ds-card img{
     padding:5px;
@@ -94,10 +100,23 @@ body{
     max-width:100px;
     width:80%;
 }
+
 .icondescarga{
     max-width:35px;
     width:60%;
 }
+.icondescarga:hover{
+    animation: rotate 1s infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+
 @media screen and (min-width:768px) {
     .ds-h1{
         font-size: 30px;
