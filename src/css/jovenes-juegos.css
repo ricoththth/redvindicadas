@@ -1,0 +1,237 @@
+.main-section {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem .5rem;
+}
+
+.main-resources {
+    background-color: var(--rosa-oscuro);
+    border-radius: 5px;
+    margin: .5rem 0;
+    padding: .5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.main-resources h1{
+    color: white;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem .5rem;
+}
+
+.resources-buttons{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5rem;
+}
+
+.resources-buttons i {
+    color: var(--naranja);
+    font-size: 35px;
+}
+
+.button {
+    margin: 1rem;
+}
+
+.space-button {
+    background-color: var(--fondo);
+    border: 2px solid var(--rosa-oscuro);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--rosa-oscuro);
+    font-size:15px;
+    font-weight: bolder;
+    padding: .5rem;
+}
+
+.space-button:hover {
+    background-color: var(--rosa-oscuro);
+    color: var(--fondo);
+}
+
+/* Diseño de jovenes-juegos */
+
+.section-games{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-game{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: .5rem;
+}
+
+.box-division{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-bottom: .5rem;
+}
+
+.games-text{
+    margin: .5rem;
+    padding: .2rem;
+}
+
+.games-text h2{
+    text-align: center;
+    margin: .5rem;
+}
+
+.games-text p{
+    margin: .5rem;
+    text-align: center;
+}
+
+.games-image{
+    align-items: center;
+    display: flex;
+    padding: .2rem;
+}
+
+.games-image img{
+    border-radius: 100%;
+    max-width: 150px;
+}
+
+.games-buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: .5rem;
+}
+
+.juego-articulo{
+    background-color: #A12161;
+    border-radius: 10px;
+    color: #FFF8F8;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.juego-descarga{
+    background-color: #C75C7E;
+    border-radius: 10px;
+    color: #FFF8F8;
+    margin-left: .5rem;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.box-second-game{
+    background-color: #440042;
+    color: #FFF8F8;
+}
+
+.second-game{
+    flex-direction: column;
+    text-align: center;
+}
+
+.second-game h2{
+    text-align: center;
+}
+
+.second-game p{
+    text-align: center;
+}
+
+/*Resolución de tablet*/
+@media screen and (min-width: 768px) {
+
+    .main-buttons {
+        justify-content: center;
+        margin: 1rem 1.5rem;
+    }
+    
+    .resources-buttons i {
+        font-size: 80px;
+    }
+
+    .button {
+        margin: .5rem;
+    }
+    
+    .space-button {
+        font-size: 20px;
+        min-width: 150px;
+    }
+
+    /* Diseño de jovenes-juegos */
+
+    .box-game{
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .games-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    .games-image img{
+        max-width: 250px;
+    }
+
+    .box-division{
+        flex-direction: row;
+    }
+
+    .games-buttons a{
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem;
+    }
+
+    .second-game{
+        flex-direction: row-reverse;
+    }
+}
+
+/*Resolución de medias (equipos de escritorio)*/
+@media screen and (min-width: 1024px) {
+
+    .main-section {
+        align-items: center;
+    }
+
+    .main-resources {
+        display: inline-block;
+        min-width: 800px;
+        padding: 1rem;
+    }
+
+    .resources-buttons i {
+        font-size: 100px;
+    }
+
+    .space-button {
+        font-size: 25px;
+        min-width: 200px;
+    }
+
+    /* Diseño de jovenes-juegos */
+
+    .box-game{
+        align-items: center;
+    }
+
+    .box-division{
+        max-width: 900px;
+    }
+
+}
