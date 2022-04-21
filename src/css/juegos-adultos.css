@@ -72,9 +72,6 @@ span{
 }
 
 @media screen and (min-width:768px) {
-    body{
-        background-color: #ecd2ff;
-    }
     .ds-game{
         flex-direction: row;
         flex-basis: 50%;
@@ -92,9 +89,6 @@ span{
     }
 }
 @media screen and (min-width:1024px) {
-    body{
-        background-color: #d2f8ff;
-    }
     .ds-game{
         padding:0 50px;
     }
@@ -113,9 +107,6 @@ span{
     }
 }
 @media screen and (min-width:1200px) {
-    body{
-        background-color: #e6ffd2;
-    }
     .ds-game{
         padding:0 120px;
     }

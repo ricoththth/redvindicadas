@@ -110,25 +110,24 @@ p{
     text-align: left;
 }
 /*cards*/
-.container-cards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 .ds-card-border-src{
     width: 200px;
+    height: 225px;
     padding:0.1px;
     background: -webkit-linear-gradient(#FF7A00 0%, #F67209 0.01%, #A12161 81.35%);
     border-radius: 10px;
     margin: 10px;
 }
 .ds-card-src{
+    height: 215px;
     margin:5px;
     background-color:var(--fondo);
     border-radius: 10px;
     padding:15px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .ds-card-src h3{
     font-family: 'Oswald';
@@ -229,9 +228,15 @@ margin-left:-200%;
     width: 10px;
     height: 10px;
     margin:20px 10px;
-    background-color: #A12161;
     border-radius: 100%;
 }
+.bullets label{
+    background-color: #A12161;
+}
+.bullets-b label, .bullets-c label{
+    background-color: #ffc800;
+}
+
 #slide1:checked ~ .bullets label:nth-child(1),
 #slide2:checked ~ .bullets label:nth-child(2),
 #slide3:checked ~ .bullets label:nth-child(3){
@@ -254,9 +259,6 @@ iframe{
     margin:10px auto;
 }
 @media screen and (min-width:768px) {
-    body{
-        background-color: #ffd2e0;
-    }
     .ds-primer-recurso p {
         padding: 10px 60px ;
     }
@@ -269,8 +271,10 @@ iframe{
     }
     #slides .inner, #slides-b .inner-b, #slides-c .inner-c {
         width: 100%; 
+        height: 100%; 
+        padding: 5px;
         /*border:2px solid;*/ 
-        transition:none;
+        transition:none;   
     }
     .ds-title-src{
         font-size: 30px;
@@ -287,16 +291,27 @@ iframe{
     }
 }
 @media screen and (min-width:1024px) {
-    body{
-        background-color: #d2f8ff;
-    }
     .button-adult{
         height: 80%;
     }
-    
+    #slider {
+        padding: 0 100px;
+    }
+    #slider-b {
+        padding: 0 100px;
+    }
+    #slider-c {
+        padding: 0 100px;
+    }
 }
 @media screen and (min-width:1200px) {
-    body{
-        background-color: #e6ffd2;
+    #slider {
+        padding: 0 150px;
+    }
+    #slider-b {
+        padding: 0 150px;
+    }
+    #slider-c {
+        padding: 0 150px;
     }
 }
