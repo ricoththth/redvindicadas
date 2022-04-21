@@ -273,6 +273,7 @@ footer {
 .calendar-body{
     background-color: var(--fondo);
     border-radius: 5px;
+    justify-content: center;
     padding: 1rem 0;
 }
 
@@ -303,8 +304,94 @@ footer {
     background-color: #8B63C3;
     border-radius: 3px;
     border: none;
+    cursor: pointer;
     padding: .2rem;
     width: 25px;
+}
+
+  /* Diseño de modal intento 3*/
+/* Modal container*/
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .7s;
+    transition: all .7s;
+  }
+
+  /* Modal container gets target and it is shown and background modal too*/
+  .modal:target, .modal:target .modal-bg {
+    display: block;
+    z-index: 100;
+    opacity: 1;
+    visibility: visible; 
+}
+
+/* Modal content*/
+.modal-content{
+    background-color: var(--fondo);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+}
+
+.modal-header{
+    background-color: var(--rosa-oscuro);
+    border-radius: 10px 10px 0 0;
+    color: var(--fondo);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal-tittle{
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.close{
+    margin-left: 1rem;
+}
+
+.modal-exit{
+    color: var(--fondo);
+    display: inline-flex;
+    font-size: 25px;
+    justify-content: space-around;
+    margin-right: .5rem;
+    text-align: right;
+    text-decoration: none;
+}
+
+.modal-exit h2{
+    font-size: 16px;
+    text-align: center;
+}
+
+.modal-division{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-img{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: .5rem 1rem;
+    max-width: 100px;
+}
+
+.modal-text{
+    color: #303030;
 }
 
 .calendar-and-image img{
@@ -450,6 +537,28 @@ footer {
         margin-bottom: 3rem;
         padding: .5rem 1rem;
       }
+
+    /* Modal content*/
+
+    .modal-header{
+        padding: 1rem;
+    }
+
+    .modal-tittle{
+        align-items:center;
+        justify-content: space-around;
+        margin: 0;
+        padding: .5rem;
+    }
+    
+    .modal-division{
+    flex-direction: row;
+    padding: 1rem;
+    }
+
+    .modal-text{
+        border: 1px solid var(--rosa-claro);
+    }
 }
 
 /*Resolución de medias (equipos de escritorio)*/
@@ -549,10 +658,27 @@ footer {
         justify-content: space-around;
     }
 
+    .day{
+        font-size: 16px;
+    }
+
     .home-cards {
         margin-bottom: 3rem;
         padding: .5rem 2.5rem;
       }
+
+      /* Modal content*/
+    .modal-content{
+    margin: 2rem;
+    }
+
+    .modal-exit h2{
+        font-size: 20px;
+    }
+
+    .modal-img{
+        max-width: 200px;
+    }
 }
 
 /*Resolución macro*/
