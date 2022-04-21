@@ -1,0 +1,750 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --morado-osc: #440042;
+    --morado-oscuro:#3B0057;
+    --rosa-oscuro: #A12161;
+    --rosa-claro:#C75C7E;
+    --rosa-gris:#CC99A9;
+    --rosa:#F2ACB9;
+    --fondo:#FFF8F8;
+    --amarillo:#FFCA00;
+    --naranja:#FF671B;
+    /* gradiente card background: linear-gradient(180deg, #FF7A00 0%, #F67209 0.01%, #A12161 81.35%); */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header, nav, footer {
+	background: rgb(53,1,88);
+    background: linear-gradient(90deg, rgba(53,1,88,1) 0%, rgba(106,1,128,1) 100%);
+    color: white;
+}
+
+/* Diseño de header */
+.header-logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+	margin-right: auto;
+    padding: .5rem 0;
+    text-transform: uppercase;
+}
+
+.header-logo img{
+    margin: .5rem;
+    max-width: 45px;
+    width: 100%;
+}
+
+.header-logo h1 {
+    font-size: 20px;
+    font-weight: 700;
+	letter-spacing: 0.1rem;
+}
+
+/* Diseño de Nav */
+
+nav{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    position: fixed;
+    z-index: 10;
+}
+
+nav li ul{
+    background: linear-gradient(90deg, rgba(53,1,88,1) 0%, rgba(106,1,128,1) 100%);
+    display: none;
+    min-width: 140px;
+    padding: .5rem;
+    position: absolute;
+}
+
+nav li:hover > ul{
+    display: block;
+}
+
+li{
+    padding: .2rem;
+}
+
+#check-menu{
+    display: none;
+}
+
+#check-menu:checked ~ .nav-header{
+    animation: move 1s 1;
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes move {
+    0%{
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, .1);
+        transform: translateX(5px);
+    }
+
+    70%{
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
+        transform: translateX(10px);
+    }
+
+    100%{
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
+        transform: translateX(5px);
+    }
+}
+
+.button-menu{
+    color: white;
+    cursor: pointer;
+}
+
+.nav-header{
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    font-weight: 600;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    width: 100vw;
+}
+
+.nav-header li{
+    margin: .3rem;
+}
+
+.nav-header a{
+    color: #FFF8F8;
+    text-decoration: none;
+	padding: .5rem;
+}
+
+.nav-header a:hover{
+    text-decoration: underline;
+}
+
+.redes a:hover{
+    background-color: #A12161;
+    text-decoration: none;
+}
+
+.redes li{
+    list-style: none;
+    margin: .5rem;
+}
+
+/* Diseño de footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	padding: 0px;
+}
+
+.foot-email, .foot-developers, .foot-tech-power{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5rem;
+    text-align: center; 
+}
+
+.foot-email img, .foot-email h1, .foot-email p{
+    margin: .2rem 0;
+}
+
+.foot-email img {
+    max-width: 100px;
+    width: 100%;
+}
+
+.foot-developers h3, .foot-developers ul{
+    margin: .2rem 0;
+}
+
+.foot-developers-list{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    list-style: none;
+}
+
+.list-section li{
+    font-size: 15px;
+}
+
+.foot-tech-power img {
+    max-width: 200px;
+    padding: .5rem;
+    width: 100%;
+}
+
+.foot-tech-power h3 {
+    color: var(--rosa); 
+}
+
+/* Submenú */
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem .5rem;
+}
+
+.main-resources {
+    background-color: var(--rosa-oscuro);
+    border-radius: 5px;
+    margin: .5rem 0;
+    padding: .5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.main-resources h1{
+    color: white;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem .5rem;
+}
+
+.resources-buttons{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5rem;
+}
+
+.resources-buttons i {
+    color: var(--naranja);
+    font-size: 35px;
+}
+
+.button {
+    margin: 1rem;
+}
+
+.space-button {
+    background-color: var(--fondo);
+    border: 2px solid var(--rosa-oscuro);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--rosa-oscuro);
+    font-size:15px;
+    font-weight: bolder;
+    padding: .5rem;
+}
+
+.space-button:hover {
+    background-color: var(--rosa-oscuro);
+    color: var(--fondo);
+}
+
+.contents-buttons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cambios, .EIS, .Prevencion{
+    min-height: 123px;
+    min-width: 100px;
+}
+
+.cambios a, .EIS a, .Prevencion a{
+    color: black;
+    text-decoration: none;
+}
+
+.contents-buttons img {
+    min-height: 99px;
+    min-width: 99px;
+    max-height: 100px;
+    max-width: 100px;
+    height: 100%;
+    width: 100%;
+}
+
+/* Submenú fin */
+
+/* Diseño de jovenes3 */
+
+.content-prevention h1 {
+    background-color: var(--morado-osc);
+    color: var(--fondo);
+    margin: 1rem 0;
+    padding: 1rem .5rem;
+    text-align: center;
+    text-shadow: 1px 2px 4px black;
+}
+
+.content-prevention p {
+    margin: 1rem;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.main-gradient-prevention{
+    display: flex;
+    justify-items: center;
+    margin: 2rem 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-gradient-prevention p{
+    margin: 1rem .2rem;
+    font-size: 16px;
+}
+
+.main-gradient-prevention a{
+    text-decoration: none;
+}
+
+.box-prevention{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .2rem;
+}
+
+.prevention-women, .prevention-kids, .prevention-young{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: .5rem 0;
+    max-width: 100px;
+    min-height: 150px;
+    padding: 0;
+    text-align: center;
+}
+
+.prevention-women a, .prevention-kids a, .prevention-young a{
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.gradient-box{
+    background-color: var(--fondo);
+    border: 15px solid transparent;
+    border-image: -webkit-linear-gradient(bottom,#F77737,#A12161) 1 10;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.gradient-box h3{
+    margin: 1rem;
+    text-align: center;
+}
+
+.gradient-box p{
+    font-weight: 400;
+    margin: 1rem;
+    text-align: center;
+}
+
+/* .prevention-women{
+    border-radius: 30px 10px;
+} */
+
+/* .prevention-kids{
+    border-radius: 30px;
+} */
+
+/* .prevention-young{
+    border-radius: 10px 30px;
+} */
+
+.button-see{
+    margin: 1rem;
+}
+
+.boton-morado{
+    background-color: #440042;
+    border-radius: 10px;
+    color: white;
+    font-size:15px;
+    font-weight: bolder;
+    margin: 1rem;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+.go-lines a{
+    color: #440042;
+    text-decoration: none;
+}
+
+.prevention-foot{
+    background-color: var(--morado-osc);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 20px;
+}
+
+.section-no-game {
+    background-color: var(--morado-osc);
+    margin-top: 2rem;
+}
+
+.section-no-game h2 {
+    background-color: var(--rosa-oscuro);
+    color: var(--fondo);
+    margin: 1rem 0;
+    padding: 1rem .5rem;
+    text-align: center;
+    text-shadow: 1px 2px 4px black;
+}
+
+.section-no-game p{
+    color: white;
+    margin: 1rem;
+    text-align: center;
+}
+
+.box-no-game{
+    margin:1.5rem;
+}
+
+.box-no-game p{
+    color: black;
+    text-align: center;
+}
+
+.no-game-foot{
+    background-color: var(--rosa-oscuro);
+    max-height: 30px;
+    height: 100%;
+}
+
+.go {
+    padding: .5rem;
+    text-align: center;
+}
+
+.go a {
+    max-width: 1000px;
+}
+
+.go i{
+    color: #A12161;
+}
+
+/*Resolución de tablet*/
+@media screen and (min-width: 768px) {
+    /* Diseño de header */
+    .header-logo h1 {
+        font-size: 35px; 
+        margin-left: .2rem;
+    }
+
+    .header-logo img{
+        margin: .5rem;
+        max-width: 80px;
+        width: 100%;
+    }
+
+    /* Diseño de footer */
+
+    footer{
+        width: 100%;
+    }
+
+    .foot-email img {
+        max-width: 100px;
+        width: 100%;
+    }
+
+    .foot-tech-power img {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    /* Submenú */
+
+    .main-buttons {
+        justify-content: center;
+        margin: 1rem 1.5rem;
+    }
+    
+    .resources-buttons i {
+        font-size: 80px;
+    }
+
+    .button {
+        margin: .5rem;
+    }
+    
+    .space-button {
+        font-size: 20px;
+        min-width: 150px;
+    }
+
+    .contents-buttons img {
+        max-height: 250px;
+        max-width: 250px;
+        height: 70%;
+        width: 70%;
+    }
+
+    /* Fin de submenú */
+
+    /* Diseño de jovenes3 */
+
+    .main-gradient-prevention p{
+        font-size: 16px;
+    }
+
+    .prevention-women, .prevention-kids, .prevention-young{
+        font-size: 20px;
+        max-width: 280px;
+        min-width: 279px;
+        min-height: 200px;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .boxes-no-game{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    .box-no-game{
+        margin-bottom: 2rem;
+        min-width: 290px;
+    }
+
+    .boton-morado{
+        font-size: 20px;
+    }
+
+    .gradient-box h3 {
+        font-size: 20px;
+    }
+
+    .gradient-box p {
+        font-size: 15px;
+    }
+
+    .gradient-box {
+        margin: .5rem 1rem;
+    }
+
+    .section-no-game p{
+        margin: 2rem;
+    }
+
+}
+
+/*Resolución de medias (equipos de escritorio)*/
+@media screen and (min-width: 1024px) {
+
+    body, header, nav, footer {
+        margin: 0;
+        width: 100%;
+    }
+
+    /* Diseño de header */
+
+    .logo{
+        max-width: 180px;
+        width: 100%;
+        /* margin-right: 50px; */
+    }
+
+    .header-logo img{
+        margin: .5rem;
+        max-width: 110px;
+        width: 100%;
+    }
+
+    .header-logo h1 {
+        font-size: 50px; 
+        margin-left: .5rem;
+    }
+
+    /* Diseño de nav */
+    nav{
+        position: initial;
+        width: 100%;
+    }
+
+    .button-menu{
+        display: none;
+    }
+
+    .nav-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: .2rem; 
+        width: 100%;       
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    #check-menu:checked ~ .nav-header{
+        display: flex;
+        flex-direction: row;
+        transform: translateX(0);
+    }
+
+/* Diseño de footer */
+
+    footer{
+    flex-direction: row;
+    }
+
+    .foot-email img {
+        max-width: 80px;
+        width: 100%;
+    }
+
+    .foot-developers-list{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    /* Submenú */
+
+    .main-section {
+        align-items: center;
+    }
+
+    .main-resources {
+        display: inline-block;
+        min-width: 800px;
+        padding: 1rem;
+    }
+
+    .resources-buttons i {
+        font-size: 100px;
+    }
+
+    .space-button {
+        font-size: 25px;
+        min-width: 200px;
+    }
+
+    .contents-buttons {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .contents-buttons img {
+        max-height: 300px;
+        max-width: 300px;
+    }
+
+    /* Fin de submenú */
+
+    /* Diseño de jovenes3 */
+
+    .main-gradient-prevention{
+        margin: 2rem;
+        padding: 1.5rem;
+    }
+
+    .content-prevention h1{
+        font-size: 35px;
+    }
+
+    .content-prevention p{
+        font-size: 20px;
+    }
+
+    .box-prevention{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .prevention-women, .prevention-young{
+        min-width: 199px;
+        min-height: 199px;
+        max-width: 200px;
+        max-height: 200px;
+        padding: 0;
+    }
+
+    .prevention-kids{
+        min-width: 249px;
+        min-height: 249px;
+        max-width: 250px;
+        max-height: 250px;
+        padding: 0;
+    }
+
+    .boxes-no-game{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .box-no-game{
+        min-width: 300px;
+    }
+
+    .gradient-box h3 {
+        font-size: 30px;
+    }
+
+    .gradient-box p {
+        font-size: 25px;
+    }
+
+    .section-no-game p{
+        font-size: 18px;
+    }
+
+}
+
+/*Resolución macro*/
+@media screen and (min-width: 1200px) {
+    main{
+        margin: 0 auto;
+    }
+
+    /* Diseño de footer */
+    .foot-email img {
+        max-width: 90px;
+        width: 100%;
+    }  
+}
+
