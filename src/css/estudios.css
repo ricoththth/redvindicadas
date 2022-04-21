@@ -34,92 +34,6 @@ html {
 }
 
 
-header,
-nav,
-footer {
-    background: rgb(53, 1, 88);
-    background: linear-gradient(90deg, rgba(53, 1, 88, 1) 0%, rgba(106, 1, 128, 1) 100%);
-    color: white;
-}
-
-.d-vectores {
-    margin: 0px;
-    padding: 0px;
-}
-
-/* Diseño de header */
-.header1 {
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    text-transform: uppercase;
-}
-
-
-.header1 img {
-    margin: .5rem;
-    max-width: 300px;
-    width: 20%;
-}
-
-.header1 h1 {
-    font-size: 20px;
-    font-family: 'Manjari', sans-serif;
-    letter-spacing: 0.1rem;
-    font-weight: 700;
-}
-
-.nav-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 1rem;
-    font-weight: 600;
-}
-
-li {
-    padding: .5rem;
-}
-
-/* Diseño de footer */
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0px;
-}
-
-.foot1,
-.foot2,
-.foot3 {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: .5rem;
-    text-align: center;
-}
-
-.foot1 img {
-    max-width: 300px;
-    width: 40%;
-}
-
-.foot3 img {
-    max-width: 500px;
-    padding: 1rem;
-    width: 60%;
-}
-
-.foot3 h4 {
-    color: pink;
-}
-
-
 
 /* ESTILOS ESTUDIOS */
 
@@ -196,7 +110,7 @@ footer {
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
     margin-bottom: 50px;
-    background-color: #c75c7e85;
+    background-color: #c75c7e33;
     box-shadow: 10px 15px #A12161;
     margin-top: 30px;
 }
