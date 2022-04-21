@@ -31,14 +31,21 @@ span{
 }
 .ds-game img{
     max-width: 250px;
-    width: 60%;
+    width: 80%;
 }
 .ds-game{
-    border: 2px solid;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.ds-game-2{
+    flex-direction:column-reverse;
+}
+.ds-container-game-2{
+    background-color: var(--morado-osc);
+    padding: 10px 0;
+    color: white;
 }
 .ds-button{
     color: white;
@@ -49,35 +56,67 @@ span{
 .article{
     background-color: var(--rosa-oscuro);
 }
+.article:hover{
+    background-color: var(--rosa-claro);
+}
 .game{
     background-color: var(--rosa-claro);
+}
+.game:hover{
+    background-color: var(--rosa-oscuro);
 }
 .ds-button-games{
     margin: 5px;
     display: flex;
     justify-content:center;
 }
-.ds-container-game-2{
-    background-color: var(--morado-osc);
-    padding: 10px 0;
-    color: white;
-}
+
 @media screen and (min-width:768px) {
     body{
         background-color: #ecd2ff;
     }
     .ds-game{
-        border: 2px solid;
         flex-direction: row;
+        flex-basis: 50%;
     }
-    
+    .ds-game{
+        flex-direction: row;
+        padding:0 50px;
+    }
+    .ds-game img{
+        max-width: 900px;
+        width: 95%;
+    }
+    a{
+        font-size: 20px;
+    }
 }
 @media screen and (min-width:1024px) {
     body{
         background-color: #d2f8ff;
     }
+    .ds-game{
+        padding:0 50px;
+    }
+    .ds-game img{
+        width: 100%;
+    }
+    .ds-group-text{
+        padding:0 50px;
+    }
+    .ds-game h2{
+        font-size: 35px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
 @media screen and (min-width:1200px) {
     body{
         background-color: #e6ffd2;
     }
-}}
+    .ds-game{
+        padding:0 120px;
+    }
+}
