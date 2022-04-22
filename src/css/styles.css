@@ -173,7 +173,7 @@ footer {
 }
 
 .foot-email img {
-    max-width: 100px;
+    max-width: 80px;
     width: 100%;
 }
 
@@ -228,6 +228,7 @@ footer {
         max-width: 200px;
         width: 100%;
     }
+
 }
     /*Resolución de medias (equipos de escritorio)*/
 @media screen and (min-width: 1024px) {
@@ -291,7 +292,7 @@ footer {
     }
 
     .foot-email img {
-        max-width: 80px;
+        max-width: 100px;
         width: 100%;
     }
 
@@ -301,9 +302,10 @@ footer {
         list-style: none;
     }
     
+}
     /*Resolución macro*/
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width:1200px) {
 
     main{
         color: #FFF8F8;
@@ -321,4 +323,8 @@ footer {
         max-width: 90px;
         width: 100%;
     }
-}}
+
+}
+
+
+
