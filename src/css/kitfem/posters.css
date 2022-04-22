@@ -28,11 +28,12 @@ a{
 	background-color: #0f0a14;
 	font-family: 'Montserrat', sans-serif;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	padding: 0ch;
+	position: relative;
+	width: 100%;
 	}
 #bannerkitfem h2{
-	padding: 1rem;
 	font-weight: 800;
 	font-size: 1.5rem;
 	color: rgb(234, 209, 255);
@@ -41,10 +42,15 @@ a{
 }
 
 .vector-left-banner{
-    width: 20%;
+    width: 10%;
+	position: absolute;
+	left: 0%;
 }
 .vector-rigth-banner{
     width: 10%;
+	position: absolute;
+	right: 0;
+	bottom: 0%;
 }
 /*NAV SPACE KITFEM 1*/
 #nav-space{
@@ -95,8 +101,8 @@ a{
 	color: #C75C7E;
 	border-bottom: 1px solid rgba(26, 25, 25, 0.459);
 	padding: 0.6rem;}
-.content-kit-left img{
-	width: 50%;
+ 	.content-kit-left img{
+	width: 100%;
 }
 .content-kit-rigth{
     width: 10%; display: flex; flex-direction: column;align-items: flex-end;
@@ -108,18 +114,69 @@ a{
 	width: 50%;
 }
 .content-middle-posters{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .content-middle-posters img{
-width: 80%;
+width: 90%;
+margin-bottom: 8px;
+height: 300px;
 }
 #content-posters-general{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+#button-orange{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cssbuttons-io-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	font-size: 12px;
+	padding: 0.8em 1.5em 0.8em 1.2em;
+	color: white;
+	background: #FF671B;
+	border: none;
+	letter-spacing: 0.05em;
+	border-radius: 20em;
+   }
+   .cssbuttons-io-button svg {
+	margin-right: 8px;
+   }
+   .cssbuttons-io-button:hover {
+	box-shadow: 0 0.5em 1.5em -0.5em #ff2600be;
+   }
+   .cssbuttons-io-button:active {
+	box-shadow: 0 0.3em 1em -0.5em #d66c26be;
+   }
 /*Resolución de tablet*/
-/*@media screen and (min-width: 768px)*/
+@media screen and (min-width: 768px){
+	#bannerkitfem h2{
+		padding: 2.3rem;
+		font-size: 2.3rem;
+	}
+	.content-middle-posters{
+		width: 80%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.content-middle-posters img{
+	width: 40%;
+	margin-bottom: 8px;
+	height: 300px;
+	margin: 6px
+	}
+}
+@media screen and (min-width: 1024px){
+	.content-middle-posters img{
+		width: 30%;
+		margin: 6px;}
+}
