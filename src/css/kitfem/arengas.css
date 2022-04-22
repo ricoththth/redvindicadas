@@ -113,9 +113,6 @@ a{
     .content-kit-rigth{
         width: 10%; display: flex; flex-direction: column;align-items: flex-end;
     }
-    .posters img:hover{
-        filter: brightness(70%);
-        }
     .content-kit-rigth img{
         width: 50%;
     }
