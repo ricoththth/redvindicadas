@@ -32,6 +32,7 @@ a{
 	padding: 0ch;
 	position: relative;
 	width: 100%;
+    z-index: -1;
 	}
 #bannerkitfem h2{
 	font-weight: 800;
