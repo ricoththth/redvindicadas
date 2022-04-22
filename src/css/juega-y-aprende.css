@@ -62,10 +62,10 @@ body{
     background-position: center;
 }
 .fondo-adultos{
-    background-image: url(/src/utils/images/juega-y-aprende/adul-background.svg);
+    background-image: url(../utils/images/juega-y-aprende/adul-background.svg);
 }
 .fondo-jovenes{
-    background-image: url(/src/utils/images/juega-y-aprende/jov-background.svg);
+    background-image: url(../utils/images/juega-y-aprende/jov-background.svg);
 }
 .ds-card-container{
     display: flex;

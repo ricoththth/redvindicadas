@@ -524,21 +524,6 @@ footer {
         margin: .5rem 1rem;
     }
 
-    .ds-barnav-interna{
-        height: 140px;
-    }
-
-    .ds-imglinea-nav{
-        height:100px;
-    }
-
-    .button-adult, .desactive:hover{
-        font-size: 20px;
-    }
-    .button-adult:hover, .desactive{
-        font-size: 20px;
-    }
-
 }
 
 /*Resolución de medias (equipos de escritorio)*/
@@ -694,20 +679,6 @@ footer {
         min-width: 400px;
     }
 
-    .ds-barnav-interna{
-        height: 160px;
-    }
-
-    .ds-imglinea-nav{
-        height:120px;
-    }
-
-    .button-adult, .desactive:hover{
-        font-size: 30px;
-    }
-    .button-adult:hover, .desactive{
-        font-size: 30px;
-    }
 }
 
 /*Resolución macro*/
