@@ -328,7 +328,10 @@ footer {
         width: 100%;
     }
 }
-
+.asociados a:hover {
+    background-color: rgba(255, 103, 27, 70%);
+    color: #FFF8F8;
+}
 .d-titulolineas h1 {
     background-image: url(../utils/images/vectortitulo-lineasemer.svg);
     color: #FFFF;
@@ -368,6 +371,7 @@ footer {
     background-color: #c75c7e33;
     box-shadow: 10px 15px #A12161;
     margin: 25% 8%;
+    color: #000;
 }
 
 .d-container h1 {
