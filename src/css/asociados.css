@@ -364,7 +364,7 @@ footer {
 .d-container {
     border: #A12161 4px solid;
     width: 250px;
-    height: 55vh;
+    height: 600px;
     text-align: center;
     margin: 50px 20px;
     padding: 15px;
@@ -394,6 +394,10 @@ p {
 
 .vector-dos {
     float: right;
+}
+
+.asociados a, a:visited {
+    color: #3B0057;
 }
 
 /* MEDIA QUERIES */
