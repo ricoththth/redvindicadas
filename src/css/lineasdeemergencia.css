@@ -345,7 +345,8 @@ footer {
 
   .dropdown:hover .dropdown-content {
     display: block;
-    width: 40%;
+    width: fit-content;
+    height: max-content;
     text-align:justify;
     cursor: pointer;
   }
