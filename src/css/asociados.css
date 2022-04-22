@@ -364,7 +364,6 @@ footer {
 .d-container {
     border: #A12161 4px solid;
     width: 250px;
-    height: 600px;
     text-align: center;
     margin: 50px 20px;
     padding: 15px;
@@ -396,7 +395,7 @@ p {
     float: right;
 }
 
-.asociados a, a:visited {
+.d-container a, a:visited {
     color: #3B0057;
 }
 
