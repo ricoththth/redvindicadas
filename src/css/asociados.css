@@ -382,13 +382,11 @@ footer {
 a,
 p {
     padding: 15px;
-    font-weight: 600;
-}
+    font-weight: 600;}
 
 .d-container img {
     width: 200px;
 }
-
 
 .d-vectores-asociados-2 {
     display: flex;
