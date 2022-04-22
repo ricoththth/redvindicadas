@@ -308,14 +308,7 @@ footer {
     @media screen and (min-width:1200px) {
 
     main{
-        color: #FFF8F8;
         margin: 0 auto;
-        max-width: 1440px;
-    }
-
-    /* Diseño de nav */
-    .nav-header{
-        max-width: 1440px;
     }
 
     /* Diseño de footer */
