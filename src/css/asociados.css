@@ -395,7 +395,10 @@ p {
     float: right;
 }
 
-.d-container a, a:visited {
+.d-container a {  
+    color: #3B0057;
+}
+.d-container a:visited {
     color: #3B0057;
 }
 
