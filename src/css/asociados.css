@@ -364,7 +364,6 @@ footer {
 .d-container {
     border: #A12161 4px solid;
     width: 250px;
-    height: 55vh;
     text-align: center;
     margin: 50px 20px;
     padding: 15px;
@@ -382,13 +381,11 @@ footer {
 a,
 p {
     padding: 15px;
-    font-weight: 600;
-}
+    font-weight: 600;}
 
 .d-container img {
     width: 200px;
 }
-
 
 .d-vectores-asociados-2 {
     display: flex;
@@ -396,6 +393,13 @@ p {
 
 .vector-dos {
     float: right;
+}
+
+.d-container a {  
+    color: #3B0057;
+}
+.d-container a:visited {
+    color: #3B0057;
 }
 
 /* MEDIA QUERIES */
